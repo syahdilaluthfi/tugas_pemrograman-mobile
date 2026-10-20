@@ -19,9 +19,13 @@ class StudentCard(
         }
     }
     // Tambahkan method ringkasan di sini
-    fun ringkasan(): String {
-    return "Nama: $nama, NIM: $nim, Prodi: $prodi, Total SKS: $totalSks"
-}
+       fun ringkasan(): String {
+        return "Nama: $nama, NIM: $nim, Prodi: $prodi, Total SKS: $totalSks"
+    }
+} // Penutup class StudentCard
+
+fun main() { // Satu-satunya main()
+    // Kode program mahasiswa kamu di sini
 }
 
 fun main() {
