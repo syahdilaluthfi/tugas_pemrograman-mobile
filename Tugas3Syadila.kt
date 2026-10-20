@@ -17,7 +17,12 @@ class StudentCard(
         if (jumlah > 0 && totalSks + jumlah <= 24) {
             totalSks += jumlah
         }
-
+    }
+    // Tambahkan method ringkasan di sini
+    fun ringkasan(): String {
+    return "Nama: $nama, NIM: $nim, Prodi: $prodi, Total SKS: $totalSks"
+}
+}
         fun main() {
             //Membuat objek dari class studentcard
             val mhs = studentcard("2409020064","Syadila Ayu", "Teknologi Informasi")
@@ -35,14 +40,14 @@ class StudentCard(
             println("Status awal: ${mhs.status}")
 
             //Mengambil method ambilsks()
-            mhs.ambilsks(13)
+            mhs.ambilSks(13)
             println("Setelah ambil 13 sks: ${mhs.status} SKS, status: ${mhs.status}")
 
-            mhs.ambilsks(5)
+            mhs.ambilSks(5)
             println("Setelah ambil 5 sks: ${mhs.totalSks} SKS")
 
-            //Ditolak karena 22 + 5 = 27, lebih dari 24
-            mhs.ambilsks(7)
+            //Ditolak karena 18 + 7 = 25, lebih dari 24
+            mhs.ambilSks(7)
             println("Setelah ambil 7 sks: ${mhs.totalSks} SKS")
 
             //Memanggil methof ringkasan()
