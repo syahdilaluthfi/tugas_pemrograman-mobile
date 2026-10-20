@@ -22,6 +22,8 @@ class StudentCard(
     fun ringkasan(): String {
     return "Nama: $nama, NIM: $nim, Prodi: $prodi, Total SKS: $totalSks"
 }
+}
+
 fun main() {
             //Membuat objek dari class studentcard
             val mhs = StudentCard("2409020064","Syadila Ayu", "Teknologi Informasi")
